@@ -1,15 +1,15 @@
 const Discord = require('discord.js'); 
 const client = new Discord.Client({disableEveryone: true});
-const prefix = 'R'
+const prefix = 'N'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`~ Rollet community,`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`Nard Scober,`,'https://www.twitch.tv/v5bz');
 });
 
 client.on("message", message => {
 
-    if (message.content.startsWith("Rbbc")) {
+    if (message.content.startsWith("Nbbc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -25,7 +25,7 @@ client.on("message", message => {
  
  client.on("message", message => {
 
-    if (message.content.startsWith("Rbc")) {
+    if (message.content.startsWith("Nbc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
